@@ -100,5 +100,5 @@
 License version 3（`GPL-3.0-only`）发布。完整许可证正文见 [LICENSE](license/LICENSE)。
 
 第三方组件仍适用其各自的许可证，不因本项目采用 GPLv3 而改变。相关说明见
-[THIRD_PARTY_LICENSES.md](license/THIRD_PARTY_LICENSES.md)。向本项目提交的贡献，除另有
+[THIRD_PARTY_LICENSES](license/THIRD_PARTY_LICENSES)。向本项目提交的贡献，除另有
 书面约定外，也按 `GPL-3.0-only` 发布。

@@ -1,0 +1,33 @@
+# 第三方许可证说明
+
+DobotRX 的项目自有代码采用 `GPL-3.0-only`。本声明不改变第三方组件原有的
+版权归属和许可证条件。
+
+## Qt 5.12.12
+
+主程序使用 Qt Core、GUI、Widgets、Network、WebSockets、Concurrent 和
+PrintSupport 模块。Qt 提供商业许可及开源许可；所使用组件可能适用 LGPLv3、
+GPLv3 及 Qt Company GPL Exception。Qt 随附的许可证正文位于
+[`license/Qt`](Qt) 目录。发布二进制文件时，还应核对实际随附的 Qt
+组件及其第三方依赖，并履行对应许可证要求。
+
+Qt Copyright (C) The Qt Company Ltd. and other contributors.
+
+## QCustomPlot 2.0.1
+
+`DobotRXStudio/QCustomPlot` 中包含 QCustomPlot 2.0.1 源码。该源码声明采用
+GNU General Public License version 3 or later（`GPL-3.0-or-later`）。版权和
+许可证声明保留在 `qcustomplot.cpp` 与 `qcustomplot.h` 文件头中。
+
+QCustomPlot Copyright (C) 2011-2018 Emanuel Eichhammer.
+
+## LeRobot 相关代码
+
+`DobotRXTool/robotformatapp/lerobot` 中部分文件包含来源于 Hugging Face LeRobot
+项目的代码，并在对应文件头中声明采用 Apache License 2.0。其版权和许可证
+声明应随源码及二进制发布物一并保留。
+
+## 其他组件
+
+Git 子模块、打包产物及其依赖仍适用各自的许可证。发布前应根据最终二进制包
+生成完整的软件物料清单和第三方许可证清单；本文件不是对所有传递依赖的穷举。

@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeviceInfoWidgetAtomMax</class>
+ <widget class="QWidget" name="DeviceInfoWidgetAtomMax">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">#widget{
+	opacity: 1;
+	background-image: url(:/res/image/atomMax.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}</string>
+     </property>
+     <widget class="QLabel" name="labelRShoulderPMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>110</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelHeadYMotor">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLElbowPMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>200</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>140</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左手肩关节横滚电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRKneePMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>430</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>110</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左手肩关节俯仰电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLHipYMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>400</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>400</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右腿髋关节偏航电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLWristPMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>280</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>头部偏航电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRShoulderYMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>490</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左腿踝关节电机2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLShoulderYMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>170</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>370</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右腿髋关节横滚电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLHipPMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>340</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>310</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左手腕关节横滚电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>400</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左腿髋关节偏航电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRElbowYMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>260</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>370</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左腿髋关节横滚电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>200</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右手肘关节俯仰电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>310</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右手腕关节横滚电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLElbowYMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>260</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>80</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>头部俯仰电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLAnkleMotor1">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>460</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLHipRMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>370</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLKneePMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>430</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRHipYMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>400</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>430</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左腿膝关节俯仰电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRHipPMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>340</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>280</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左手腕关节俯仰电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>230</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>腰关节电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRHipRMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>370</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLShoulderPMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>110</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelWaistMotor">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>230</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>110</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右手肩关节俯仰电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelHeadPMotor">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>80</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>260</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右手肘关节偏航电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>460</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右腿踝关节电机1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLShoulderRMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>140</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRWristRMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>310</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>340</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左腿髋关节俯仰电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLWristRMotor">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>310</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRShoulderRMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>140</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>340</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右腿髋关节俯仰电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>170</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左手肩关节偏航电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLAnkleMotor2">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>490</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRAnkleMotor2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>490</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>200</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左手肘关节俯仰电机</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>490</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右腿踝关节电机2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRAnkleMotor1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>460</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>460</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左腿踝关节电机1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>170</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右手肩关节偏航电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>430</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右腿膝关节俯仰电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRWristPMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>280</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>140</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右手肩关节横滚电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>280</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>右手腕关节俯仰电机</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRElbowPMotor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>200</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.QLabel{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #131414;
+	text-align: left;
+}
+.QLabel:!enabled{
+	color: #ff7f7f;
+}</string>
+      </property>
+      <property name="text">
+       <string>通讯正常</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>260</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+      </property>
+      <property name="text">
+       <string>左手肘关节偏航电机</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

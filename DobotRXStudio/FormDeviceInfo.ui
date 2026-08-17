@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormDeviceInfo</class>
+ <widget class="QWidget" name="FormDeviceInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>841</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(245,247,250);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="leftMargin">
+    <number>9</number>
+   </property>
+   <property name="rightMargin">
+    <number>9</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>35</number>
+      </property>
+      <property name="rightMargin">
+       <number>35</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">opacity: 1;
+font-size: 14px;
+font-weight: normal;
+line-height: 24px;
+color: #131414;
+background-image: url(:/res/image/info.png);
+background-repeat: no-repeat;
+background-position: left center;
+text-align: left;
+padding-left: 16px;</string>
+          </property>
+          <property name="text">
+           <string>机器人名称：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelRobotName">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">opacity: 1;
+font-size: 14px;
+font-weight: normal;
+line-height: 24px;
+color: #131414;
+text-align: left;</string>
+          </property>
+          <property name="text">
+           <string>ATOM_MAX002</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">opacity: 1;
+font-size: 14px;
+font-weight: normal;
+line-height: 24px;
+color: #131414;
+background-image: url(:/res/image/info.png);
+background-repeat: no-repeat;
+background-position: left center;
+text-align: left;
+padding-left: 16px;</string>
+        </property>
+        <property name="text">
+         <string>关节电机</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>880</width>
+          <height>530</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="DeviceInfoWidgetUnknown" name="pageUnknown"/>
+        <widget class="DeviceInfoWidgetAtomMax" name="pageAtomMax">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+        <widget class="DeviceInfoWidgetAtomW" name="pageAtomW"/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DeviceInfoWidgetAtomMax</class>
+   <extends>QWidget</extends>
+   <header>DeviceInfoWidget/DeviceInfoWidgetAtomMax.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DeviceInfoWidgetUnknown</class>
+   <extends>QWidget</extends>
+   <header>DeviceInfoWidget/DeviceInfoWidgetUnknown.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DeviceInfoWidgetAtomW</class>
+   <extends>QWidget</extends>
+   <header>DeviceInfoWidget/DeviceInfoWidgetAtomW.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

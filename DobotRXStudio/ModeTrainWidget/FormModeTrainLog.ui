@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormModeTrainLog</class>
+ <widget class="QWidget" name="FormModeTrainLog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>40</number>
+   </property>
+   <property name="rightMargin">
+    <number>40</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+    background-color: #28242E;
+    color: #D7DBD1;
+    border: none;
+    padding: 2px 4px;
+    font-size:16px;
+	line-height: 24px;
+	selection-background-color: rgb(240,240,240);
+	selection-color: #28242E;
+}
+QTextBrowser QScrollBar:vertical{
+    background-color: transparent;
+    border-radius:5px;
+    width: 10px;
+}
+QTextBrowser QScrollBar::handle:vertical {
+    background-color: #CCDAF1;
+    min-height: 242px;
+    border-radius:5px;
+    width: 10px;
+}
+
+/* 向上区域样式,向下区域样式 */
+QTextBrowser QScrollBar::sub-line:vertical,
+QTextBrowser QScrollBar::add-line:vertical {
+    border: none;
+}
+
+QTextBrowser QScrollBar::add-page:vertical,
+QTextBrowser QScrollBar::sub-page:vertical {
+    background-color: transparent;
+}
+
+QTextBrowser QScrollBar:horizontal{
+    background-color: transparent;
+    border-radius:5px;
+    height: 10px;
+}
+QTextBrowser QScrollBar::handle:horizontal {
+    background-color: #CCDAF1;
+    min-width: 242px;
+    border-radius:5px;
+    height: 10px;
+}
+
+/* 向上区域样式,向下区域样式 */
+QTextBrowser QScrollBar::sub-line:horizontal,
+QTextBrowser QScrollBar::add-line:horizontal {
+  border: none;
+}
+
+QTextBrowser QScrollBar::add-page:horizontal,
+QTextBrowser QScrollBar::sub-page:horizontal {
+    background-color: transparent;
+}</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

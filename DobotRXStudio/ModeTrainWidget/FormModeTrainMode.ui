@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormModeTrainMode</class>
+ <widget class="QWidget" name="FormModeTrainMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>917</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>40</number>
+   </property>
+   <property name="rightMargin">
+    <number>40</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QTableView" name="tableView">
+     <property name="styleSheet">
+      <string notr="true">QTableView {
+    background-color: #fff;
+    color: #2D3440;
+    border: none;
+    padding: 2px 4px;
+    selection-color: #2D3440;                             /*选中区域的文字颜色*/
+    selection-background-color: rgb(255,255,255);        /*选中区域的背景色*/
+    font-size:16px;
+}
+QScrollBar:vertical{
+    background: transparent;
+    border-radius:5px;
+    width: 10px;
+}
+QScrollBar::handle:vertical {
+    background-color: #e0e0e0;
+    min-height: 242px;
+    border-radius:5px;
+    width: 10px;
+}
+
+/* 向上区域样式 */
+QScrollBar::sub-line:vertical {
+    border: none;
+}
+
+/* 向下区域样式 */
+QScrollBar::add-line:vertical {
+    border: none;
+}
+
+QScrollBar:horizontal{
+    background: transparent;
+    border-radius:5px;
+    height: 10px;
+}
+QScrollBar::handle:horizontal {
+    background-color: #e0e0e0;
+    min-width: 242px;
+    border-radius:5px;
+    height: 10px;
+}
+
+/* 向上区域样式 */
+QScrollBar::sub-line:horizontal {
+  border: none;
+}
+
+/* 向下区域样式 */
+QScrollBar::add-line:horizontal {
+  border: none;
+}</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

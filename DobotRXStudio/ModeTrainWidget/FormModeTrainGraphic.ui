@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormModeTrainGraphic</class>
+ <widget class="QWidget" name="FormModeTrainGraphic">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>871</width>
+    <height>557</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>40</number>
+   </property>
+   <property name="rightMargin">
+    <number>40</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #909399 </string>
+       </property>
+       <property name="text">
+        <string>选择数据源</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cboData">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	background: #FFFFFF;
+	border: 1px solid #DCDFE6;
+	padding: 5px 12px;
+	border-radius: 4px;
+	opacity: 1;
+	color: #606266;
+	font-size: 16px;
+	font-weight: normal;
+}
+QComboBox:!enabled{
+	background: #EEEEEE;
+}
+QComboBox QAbstractItemView{
+	background: #FFFFFF;
+	border: 1px solid #DCDFE6;
+	border-radius: 4px;
+	opacity: 1;
+	color: #606266;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0px;
+    outline:0px;
+	show-decoration-selected: 1
+}
+QComboBox QAbstractItemView::item{
+    background-color: transparent;
+    height:40px;
+    padding-left:12px;
+	margin: 0px;
+}
+QComboBox QAbstractItemView::item:selected{
+    background-color: rgba(0, 71, 187, 0.1);
+    color: #0047BB;
+}
+QComboBox QAbstractItemView::item:hover{
+    background-color: rgba(0, 71, 187, 0.1);
+    color: #0047BB;
+}
+QComboBox::drop-down {
+    border:none;
+}
+QComboBox::down-arrow {
+    image: url(:/res/image/icon_down_arrow.png);
+    padding-right:8px;
+}
+
+QComboBox QAbstractScrollArea QScrollBar:vertical{
+    width: 10px;
+    background-color: #FFFFFF;
+}
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+    border-radius: 5px;
+    background: rgb(220,220,220);
+}
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical:hover {
+    border-radius: 5px;
+    background: rgb(190,190,190);
+}</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSaveImg">
+       <property name="minimumSize">
+        <size>
+         <width>140</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">.QPushButton{
+    border-radius: 4px;
+    opacity: 1;
+    background: #FFFFFF;
+    border:1px solid #DCDFE6;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #131414;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.QPushButton:!enabled{
+	color: #909399;
+}
+
+.QPushButton:hover{
+	border:1px solid #131414;
+}</string>
+       </property>
+       <property name="text">
+        <string>保存为图片</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="widgetGraphic" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #D8D8D8;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

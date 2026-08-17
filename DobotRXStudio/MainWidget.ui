@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*此窗口的样式在代码中设置了，因为要美化阴影边框,Linux系统样式特殊处理*/</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widgetTitle" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>32</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="labelIcon">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>38</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>38</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QLabel{
+    border-image: url(:/res/image/logo.png);
+}
+.QLabel:disabled{
+    border-image: url(:/res/image/logo-offline.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">opacity: 1;
+font-size: 24px;
+font-weight: bold;
+line-height: 24px;
+display: flex;
+color: #606266;
+padding-left:10px;</string>
+        </property>
+        <property name="text">
+         <string>具身智能数据工具链</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelUser">
+        <property name="styleSheet">
+         <string notr="true">font-weight: 400; 
+font-size: 14px;
+color: #2D3440;
+padding-left:16px;
+padding-right:16px;</string>
+        </property>
+        <property name="text">
+         <string>当前用户名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLogin">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QPushButton{
+    border-radius: 4px;
+    opacity: 1;
+    background:#FFFFFF;
+    font-weight: normal;
+    font-size: 14px;
+    color: #131414;
+    text-decoration:underline;
+    border:none;
+    padding-left:16px;
+    padding-right:16px;
+}
+.QPushButton:!enabled{
+    color: #909399;
+}
+.QPushButton:hover{
+    border:1px solid #131414;
+}</string>
+        </property>
+        <property name="text">
+         <string>云端账号未登录</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLogout">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QPushButton{
+    border-radius: 4px;
+    opacity: 1;
+    background:#FFFFFF;
+    font-weight: normal;
+    font-size: 14px;
+    color: #131414;
+    text-decoration:underline;
+    border:none;
+    padding-left:16px;
+    padding-right:16px;
+}
+.QPushButton:!enabled{
+    color: #909399;
+}
+.QPushButton:hover{
+    border:1px solid #131414;
+}</string>
+        </property>
+        <property name="text">
+         <string>退出登录</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignTop">
+       <widget class="QCheckBox" name="cbChangeLang">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QCheckBox{
+	spacing: 0;
+}
+.QCheckBox::indicator:checked {
+	width: 27px;
+	height: 25px;
+	border:none;
+	background-image:url(:/res/image/English.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	subcontrol-position: center center;
+}
+.QCheckBox::indicator:unchecked {
+	width: 27px;
+	height: 25px;
+	border:none;
+	background-image:url(:/res/image/Chinese.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	subcontrol-position: center center;
+}
+
+
+.QCheckBox:hover{
+	border:2px solid rgb(69,122,247);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignTop">
+       <widget class="QPushButton" name="btnMin">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QPushButton{
+	border:none;
+	background-image:url(:/res/image/min.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:hover{
+	border:2px solid rgb(69,122,247);
+	background-image:url(:/res/image/min.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:pressed{
+	border:2px solid rgb(69,122,247);
+	background-image:url(:/res/image/min.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignTop">
+       <widget class="QPushButton" name="btnMax">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QPushButton{
+	border:none;
+	background-image:url(:/res/image/max.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:hover{
+	border:2px solid rgb(69,122,247);
+	background-image:url(:/res/image/max.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:pressed{
+	border:2px solid rgb(69,122,247);
+	border-image:url(:/res/image/max.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.QPushButton:checked{
+	border:none;
+	background-image:url(:/res/image/normal.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:checked:hover{
+	border:2px solid rgb(69,122,247);
+	background-image:url(:/res/image/normal.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:checked:pressed{
+	border:2px solid rgb(69,122,247);
+	background-image:url(:/res/image/normal.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignTop">
+       <widget class="QPushButton" name="btnClose">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QPushButton{
+	border:none;
+	background-image:url(:/res/image/close.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:hover{
+	border:2px solid rgb(69,122,247);
+	background-image:url(:/res/image/close.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.QPushButton:pressed{
+	border:2px solid rgb(69,122,247);
+	background-image:url(:/res/image/close.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidgetMain">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="pageMain">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnDeviceInfo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>设备状态</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDataCollect">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>数据采集</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDataAnnotation">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>数据标注</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDataExport">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>数据导出</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDataUpload">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>数据上传</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDataCloud">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>云端数据</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnModelTraining">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>云端模型训练</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnModelDeployInfer">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>模型部署与推理</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDataPreview">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+	opacity: 1;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	border:none;
+	background: #F2F6FC;
+	color: #606266;
+}
+
+.QPushButton:disabled{
+	background: #CCDAF1;
+	color: #0047BB;
+}</string>
+            </property>
+            <property name="text">
+             <string>数据预览</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>318</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAbout">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QPushButton{
+    border-radius: 4px;
+    border: 1px solid #DCDFE6;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    background: #F2F6FC;
+    color: #606266;
+}
+
+.QPushButton:hover{
+    border: 1px solid #131414;
+}</string>
+            </property>
+            <property name="text">
+             <string>关于我们</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <widget class="FormDataCollect" name="pageDataCollect"/>
+         <widget class="FormDataList" name="pageDataList"/>
+         <widget class="FormDataPreview" name="pageDataPreview"/>
+         <widget class="FormAtomConfig" name="pageAtomConfig"/>
+         <widget class="FormDeviceInfo" name="pageDeviceInfo"/>
+         <widget class="FormDataAnnotation" name="pageDataAnnotation"/>
+         <widget class="FormDataExport" name="pageDataExport"/>
+         <widget class="FormDataUpload" name="pageDataUpload"/>
+         <widget class="FormDataCloud" name="pageDataCloud"/>
+         <widget class="FormModelTraining" name="pageModelTraining"/>
+         <widget class="FormModeTrainCreate" name="pageModeTrainCreate"/>
+         <widget class="FormModeTrainShow" name="pageModeTrainShow"/>
+         <widget class="FormModelDeployInfer" name="pageModelDeployInfer"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="FormAnnotationHandle" name="pageAnnotationHandle"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FormDataCollect</class>
+   <extends>QWidget</extends>
+   <header>FormDataCollect.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormDataPreview</class>
+   <extends>QWidget</extends>
+   <header>FormDataPreview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormDeviceInfo</class>
+   <extends>QWidget</extends>
+   <header>FormDeviceInfo.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormDataAnnotation</class>
+   <extends>QWidget</extends>
+   <header>FormDataAnnotation.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormDataExport</class>
+   <extends>QWidget</extends>
+   <header>FormDataExport.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormModelTraining</class>
+   <extends>QWidget</extends>
+   <header>FormModelTraining.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormModelDeployInfer</class>
+   <extends>QWidget</extends>
+   <header>FormModelDeployInfer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormAtomConfig</class>
+   <extends>QWidget</extends>
+   <header>FormAtomConfig.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormDataList</class>
+   <extends>QWidget</extends>
+   <header>FormDataList.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormAnnotationHandle</class>
+   <extends>QWidget</extends>
+   <header>FormAnnotationHandle.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormDataUpload</class>
+   <extends>QWidget</extends>
+   <header>FormDataUpload.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormDataCloud</class>
+   <extends>QWidget</extends>
+   <header>FormDataCloud.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormModeTrainCreate</class>
+   <extends>QWidget</extends>
+   <header>ModeTrainWidget/FormModeTrainCreate.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormModeTrainShow</class>
+   <extends>QWidget</extends>
+   <header>ModeTrainWidget/FormModeTrainShow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
